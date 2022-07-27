@@ -1,4 +1,4 @@
-function bind(fn,obj){
+Function.prototype.bind =  function(fn,obj){
   return function(args){
      fn.call(obj,...args); 
   }
